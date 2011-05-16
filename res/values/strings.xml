@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mercury Firewall</string>
+    
+    <string name="rule_service_bound">Mercury Rule Service Bound</string>
+    <string name="rule_service_unbound">Mercury Rule Service Unbound</string>
+    
+    <string name="rule_miss">Mercury Firewall Rule Miss</string> 
+    
+    <string name="allow_access">Allow</string>
+    <string name="deny_access">Deny</string>
+    
+    <string name="remove_entry">Remove Rule</string>
+</resources>

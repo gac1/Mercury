@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="edu.stanford.mercury"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application 
+    	android:icon="@drawable/icon" 
+    	android:label="@string/app_name"
+    	android:name="Mercury" >
+		<activity 
+			android:name=".activity.MercuryList" 
+			android:configChanges="orientation|keyboardHidden" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<service android:name=".RuleService"/>
+		<service android:name="edu.stanford.lal.LalPermTester" />
+	
+    </application>
+</manifest>
