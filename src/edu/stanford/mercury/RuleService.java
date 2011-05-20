@@ -246,11 +246,11 @@ public class RuleService extends Service {
 					} 
 				}
 				
-				if (mCursor.isAfterLast() == false) {
-					mCursor.moveToNext();
-				} else {
-					endLoop = true;
-				}					
+				mCursor.moveToNext();
+				
+				if (mCursor.isAfterLast() == true) {
+					endLoop = true;					
+				} 				
 			}
 			
 			sendFirewallResponse(action, mInquiry);
